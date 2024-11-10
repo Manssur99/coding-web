@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Pertanyaan Pelawat - UNIVERSITI MANSUR IBRAHIM</title>
+    <link rel="stylesheet" href="style.css"> <!-- Pautan ke fail CSS untuk gaya -->
+    <style>
+        /* Gaya latar belakang */
+        body {
+            background-color: #f0f8ff; /* Warna latar halaman keseluruhan */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00539C;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            background-color: #0078D7;
+            overflow: hidden;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background-color: #00539C;
+        }
+        section {
+            background-color: #ffffff;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        form label, form input, form textarea, form select {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #00539C;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0078D7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pertanyaan Pelawat</h1>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Laman Utama</a></li>
+            <li><a href="tentang_kami.html">Tentang Kami</a></li>
+            <li><a href="program_akademik.html">Program Akademik</a></li>
+            <li><a href="penyelidikan_inovasi.html">Penyelidikan dan Inovasi</a></li>
+            <li><a href="sumber_pelajar.html">Sumber Pelajar</a></li>
+            <li><a href="perkhidmatan_kerjaya.html">Perkhidmatan Kerjaya</a></li>
+            <li><a href="Laman_pelawat.html">Laman Pelawat</a></li>
+        </ul>
+    </nav>
+
+    <!-- Borang Pertanyaan Pelawat -->
+    <section>
+        <form onsubmit="return submitForm(event)">
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama" required><br><br>
+
+            <label for="telefon">No. Telefon:</label><br>
+            <input type="tel" id="telefon" name="telefon" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="kategori">Kategori Pertanyaan:</label><br>
+            <select id="kategori" name="kategori" required>
+                <option value="">Sila Pilih</option>
+                <option value="Akademik">Akademik</option>
+                <option value="Penyelidikan">Penyelidikan</option>
+                <option value="Kerjaya">Kerjaya</option>
+            </select><br><br>
+
+            <label for="mesej">Mesej:</label><br>
+            <textarea id="mesej" name="mesej" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Hantar">
+        </form>
+    </section>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Mencegah penghantaran sebenar
+
+            // Dapatkan nilai dari setiap input
+            const nama = document.getElementById('nama').value;
+            const telefon = document.getElementById('telefon').value;
+            const email = document.getElementById('email').value;
+            const kategori = document.getElementById('kategori').value;
+            const mesej = document.getElementById('mesej').value;
+
+            // Paparkan mesej dalam DevTools Console
+            console.log("Nama:", nama);
+            console.log("No. Telefon:", telefon);
+            console.log("Email:", email);
+            console.log("Kategori Pertanyaan:", kategori);
+            console.log("Mesej:", mesej);
+
+            // Maklumkan pengguna bahawa borang telah dihantar
+            alert("Terima kasih atas pertanyaan anda! Kami akan menghubungi anda tidak lama lagi.");
+
+            // Reset borang
+            document.querySelector("form").reset();
+        }
+    </script>
+</body>
+</html>

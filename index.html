@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>UNIVERSITI MANSUR IBRAHIM - Menjana Kecemerlangan Akademik dan Inovasi</title>
+    <style>
+        /* Gaya asas untuk tata letak */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('latar belakang_2.jpg'); /* Gantikan dengan laluan imej anda */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Tajuk Halaman */
+        header {
+            background-color: rgba(15, 46, 117, 0.7); /* Memberikan sedikit ketelusan pada latar belakang */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Tajuk utama */
+        header h1 {
+            margin: 0;
+            font-size: 3.5em; /* Saiz font yang lebih besar */
+            color: #FFFFFF; /* Warna biru untuk tajuk */
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Bayangan untuk memberi kedalaman */
+            letter-spacing: 2px; /* Jarak antara huruf */
+            text-transform: uppercase; /* Menjadikan huruf semua besar */
+            font-weight: bold;
+            animation: bounceIn 1s ease-out; /* Animasi untuk kesan pergerakan */
+        }
+
+        /* Animasi untuk kesan tajuk */
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Perenggan di bawah tajuk */
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigasi */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            background-color: #f7f7f7;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 8px 12px;
+        }
+        nav ul li a:hover {
+            background-color: #7a7878;
+            border-radius: 5px;
+        }
+
+        /* Butang untuk Navigasi */
+        button {
+            background-color: #0f2e75; /* Warna latar belakang */
+            color: white; /* Warna teks */
+            font-size: 1em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #1f5db1; /* Warna latar belakang semasa hover */
+        }
+
+        /* Seksyen kandungan utama */
+        section {
+            text-align: center;
+            padding: 40px 20px; /* Memberikan lebih ruang supaya kandungan terletak lebih rendah */
+            background-image: url('latar belakang_2.jpg'); /* Gantikan dengan laluan imej anda */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Kotak animasi untuk teks utama */
+        .animated-box {
+            background-color: rgba(255, 255, 255, 0.7); /* Latar belakang separa telus */
+            padding: 30px;
+            display: inline-block;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            animation: glowAnimation 2s infinite alternate; /* Animasi pencahayaan */
+            max-width: 80%; /* Boleh sesuaikan saiz kotak */
+        }
+
+        /* Animasi pencahayaan pada kotak */
+        @keyframes glowAnimation {
+            0% {
+                box-shadow: 0 0 10px rgba(0, 0, 255, 0.7), 0 0 30px rgba(0, 0, 255, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.5);
+            }
+        }
+
+        /* Teks dalam kotak */
+        .animated-box p {
+            font-size: 1.3em;
+            color: #333; /* Warna teks */
+            line-height: 1.6;
+        }
+
+        /* Memindahkan logo di atas butang "Laman Pelawat" */
+        #logo-section {
+            text-align: center;
+            margin-top: 20px; /* Memberi ruang di atas logo */
+        }
+
+        /* Media query untuk skrin yang lebih kecil */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Tajuk Halaman -->
+    <header>
+        <h1>Selamat Datang ke UNIVERSITI MANSUR IBRAHIM</h1>
+        <p>Menyediakan pendidikan berkualiti dan penyelidikan inovatif untuk generasi masa depan.</p>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Laman Utama</a></li>
+            <li><a href="tentang_kami.html">Tentang Kami</a></li>
+            <li><a href="program_akademik.html">Program Akademik</a></li>
+            <li><a href="penyelidikan_inovasi.html">Penyelidikan dan Inovasi</a></li>
+            <li><a href="sumber_pelajar.html">Sumber Pelajar</a></li>
+            <li><a href="perkhidmatan_kerjaya.html">Perkhidmatan Kerjaya</a></li>
+            <li><a href="Laman_pelawat.html">Laman Pelawat</a></li>
+        </ul>
+        <!-- Menambah Butang -->
+        <button onclick="location.href='perkhidmatan_kerjaya.html'">Cari Kerjaya</button>
+    </nav>
+
+    <!-- Logo di atas butang "Laman Pelawat" -->
+    <div id="logo-section">
+        <img src="logo.png" alt="Logo UNIVERSITI MANSUR IBRAHIM" width="150"> <!-- Pastikan laluan gambar tepat -->
+    </div>
+
+    <!-- Kandungan Laman Utama -->
+    <section>
+        <div class="animated-box">
+            <p>UNIVERSITI MANSUR IBRAHIM terkenal dengan kecemerlangan akademik dan sumbangan penyelidikan yang hebat. Sertai kami dalam perjalanan ini untuk menjana inovasi dan kejayaan global.</p>
+        </div>
+        <!-- Butang untuk Tindakan Lanjut -->
+        <button onclick="location.href='program_akademik.html'">Ketahui Program Kami</button>
+    </section>
+</body>
+</html>
